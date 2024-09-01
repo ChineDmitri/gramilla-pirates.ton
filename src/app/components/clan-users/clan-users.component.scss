@@ -1,0 +1,9 @@
+.background-image {
+  background-image: url("/assets/wallpaper_2.jpg"); // Путь к вашему изображению
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

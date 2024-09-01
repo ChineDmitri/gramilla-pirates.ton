@@ -1,0 +1,16 @@
+<div class="container-fluid background-image" @fadeInOut>
+  <p-card class="main-content">
+    <ng-template pTemplate="header">
+      <h1>🏴‍☠️ Клан Пиратов 🏴‍☠️</h1>
+    </ng-template>
+    <p class="lead text-white">Добро пожаловать на официальный сайт !</p>
+    <p class="text-white">Вы можете ознакомиться с командой по ссылке ниже</p>
+    <button
+      pButton
+      label="Команда"
+      icon="pi pi-users"
+      class="p-button-outlined p-button-rounded team-button"
+      (click)="navigateToTeam()"
+    ></button>
+  </p-card>
+</div>

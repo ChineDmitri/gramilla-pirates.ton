@@ -1,0 +1,10 @@
+.team-member {
+  text-align: center;
+  margin: 1rem;
+
+  &-name {
+    color: white;
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,36 @@
+<div class="container-fluid background-image" @fadeInOut>
+  <p-card class="main-content">
+    <ng-template pTemplate="header">
+      <h1>Команда</h1>
+    </ng-template>
+
+    <p class="lead text-white">Руководство</p>
+    <div class="team-container">
+      <app-member
+        *ngFor="let chief of chiefsMembers"
+        [photoUrl]="chief.photoUrl"
+        [telegramUsername]="chief.telegramUsername"
+      >
+      </app-member>
+    </div>
+
+    <hr />
+
+    <p class="text-white">Пираты</p>
+    <div class="team-container">
+      <app-member
+        *ngFor="let member of teamMembers"
+        [photoUrl]="member.photoUrl"
+        [telegramUsername]="member.telegramUsername"
+      >
+      </app-member>
+    </div>
+    <button
+      pButton
+      label="На главную"
+      icon="pi pi-undo"
+      class="p-button-outlined p-button-rounded team-button"
+      (click)="navigateToMain()"
+    ></button>
+  </p-card>
+</div>
